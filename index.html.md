@@ -1,0 +1,79 @@
+# <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Lord Belgrave – $BELGRAVE Token</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter&display=swap" rel="stylesheet">
+<style>
+body {
+margin: 0;
+font-family: 'Inter', sans-serif;
+background-color: #0e0e0e;
+color: #f5f5f5;
+}
+header {
+background: linear-gradient(to right, #1f1f1f, #2c2c2c);
+padding: 60px 20px;
+text-align: center;
+}
+header h1 {
+font-family: 'Playfair Display', serif;
+font-size: 3em;
+margin-bottom: 10px;
+color: #e0c36f;
+}
+header p {
+font-size: 1.2em;
+color: #ccc;
+}
+section {
+padding: 40px 20px;
+max-width: 900px;
+margin: auto;
+}
+h2 {
+color: #e0c36f;
+font-family: 'Playfair Display', serif;
+}
+a.button {
+display: inline-block;
+margin-top: 20px;
+padding: 12px 24px;
+background-color: #e0c36f;
+color: #0e0e0e;
+text-decoration: none;
+font-weight: bold;
+border-radius: 6px;
+}
+.social {
+text-align:
+
+<header>
+<h1>Lord Belgrave</h1>
+<p>The Noble Standard of Meme Finance</p>
+<a class="button" href="[https://zealy.io/cw/lordbelgrave/questboard/154ae927-20ff-438a-8fc9-7166ec46c751](https://zealy.io/cw/lordbelgrave/questboard/154ae927-20ff-438a-8fc9-7166ec46c751)" target="_blank">Join the Council Trials</a>
+</header>
+
+<section>
+<h2>Bridge Transparency</h2>
+<p>$BELGRAVE is bridged from XRPL to Base with full supply integrity and public proof. The bridge dashboard outlines every transaction and validator step.</p>
+<a class="button" href="[https://www.notion.so/Belgrave-Supply-Bridge-Transparency-29f57e3158e780bc97aaf5461e113a63?source=copy_link](https://www.notion.so/Belgrave-Supply-Bridge-Transparency-29f57e3158e780bc97aaf5461e113a63?pvs=21)" target="_blank">View Bridge Dashboard</a>
+</section>
+
+<section>
+<h2>Council Trials</h2>
+<p>Rise through the ranks of the Belgrave Council. Complete quests, earn merit, and shape the realm’s destiny. The Trials are open to all who seek glory.</p>
+<a class="button" href="[https://dandy-bathroom-e3e.notion.site/Welcome-to-the-Belgrave-Council-Trials-29a030d6a07380e09f2de82f54d06d04?pvs=74](https://www.notion.so/29a030d6a07380e09f2de82f54d06d04?pvs=21)" target="_blank">Explore the Trials</a>
+</section>
+
+<div class="social">
+<p>Follow Lord Belgrave on <a href="[https://x.com/belgravelord](https://x.com/belgravelord)" target="_blank">[X.com](http://x.com/) @belgravelord</a></p>
+</div>
+
+<footer>
+© 2025 Lord Belgrave. All rights reserved. | Halal-friendly & compliant.
+</footer>
+
+</body>
+</html>
