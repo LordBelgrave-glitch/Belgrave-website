@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lord Belgrave — $BELGRAVE</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Cinzel', serif;
+      background: #0d0d0d;
+      color: #f0f0f0;
+    }
+    header {
+      background: #111;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .glow-btn {
+      background: linear-gradient(90deg, #7f00ff, #e100ff);
+      border: none;
+      padding: 1rem 2rem;
+      color: white;
+      font-size: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 0 15px #e100ff;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+    .glow-btn:hover {
+      transform: scale(1.05);
+    }
+    .hero {
+      text-align: center;
+      padding: 5rem 2rem;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      color: #e100ff;
+      text-shadow: 0 0 10px #e100ff;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 1rem auto;
+    }
+    footer {
+      background: #111;
+      padding: 2rem;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div><strong>$BELGRAVE</strong></div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#tokenomics">Tokenomics</a>
+      <a href="#bridge">Bridge</a>
+      <a href="#council">Council Trials</a>
+      <a href="#zealy">Zealy</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <h1>Lord Belgrave Awaits</h1>
+    <p>The crypto empire begins here. Multichain. Meme-powered. Halal-compliant. Join the Council.</p>
+    <button class="glow-btn">Buy $BELGRAVE</button>
+    <button class="glow-btn">Bridge Now</button>
+    <button class="glow-btn">Join Council</button>
+  </section>
+
+  <footer>
+    © 2025 Lord Belgrave. All rights reserved.  
+    <br />
+    <a href="https://github.com/belgrave-project" style="color:#e100ff;">GitHub</a> |
+    <a href="https://twitter.com/lordbelgrave" style="color:#e100ff;">Twitter</a>
+  </footer>
+</body>
+</html>
