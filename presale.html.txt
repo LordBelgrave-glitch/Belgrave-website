@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lord Belgrave — Presale</title>
+  <meta name="description" content="Join the $BELGRAVE presale. Meme-powered, halal-compliant, XRPL-native crypto empire." />
+  <meta property="og:image" content="https://www.lordbelgrave.eu/IMG_8790.png" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Cinzel', serif;
+      background: #0d0d0d;
+      color: #f0f0f0;
+    }
+    header {
+      background: #111;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo img {
+      height: 40px;
+    }
+    nav a {
+      color: #FFD700;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .hero {
+      text-align: center;
+      padding: 4rem 2rem;
+    }
+    .hero img.spin {
+      width: 120px;
+      animation: spin 3s linear infinite;
+      margin-bottom: 1.5rem;
+    }
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    .countdown {
+      font-size: 1.8rem;
+      color: #FFD700;
+      text-shadow:
+        0 0 10px #FFD700,
+        0 0 20px #800080,
+        0 0 30px #800080,
+        0 0 40px #FFD700;
+      font-weight: bold;
+      margin-bottom: 2rem;
+      animation: pulseGlow 2s infinite;
+    }
+    @keyframes pulseGlow {
+      0% {
+        text-shadow:
+          0 0 10px #FFD700,
+          0 0 20px #800080,
+          0 0 30px #800080,
+          0 0 40px #FFD700;
+      }
+      50% {
+        text-shadow:
+          0 0 5px #FFD700,
+          0 0 10px #800080,
+          0 0 15px #800080,
+          0 0 20px #FFD700;
+      }
+      100% {
+        text-shadow:
+          0 0 10px #FFD700,
+          0 0 20px #800080,
+          0 0 30px #800080,
+          0 0 40px #FFD700;
+      }
+    }
+    .glow-btn {
+      background: linear-gradient(90deg, #FFD700, #FFA500);
+      border: none;
+      padding: 1rem 2rem;
+      color: white;
+      font-size: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 0 15px #FFD700;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+      margin-top: 1rem;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .glow-btn:hover {
+      transform: scale(1.05);
+    }
+    .section {
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+    .section h2 {
+      color: #FFD700;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    .section p {
+      max-width: 600px;
+      margin: 0 auto 2rem;
+      font-size: 1.1rem;
+    }
+    .rewards {
+      background: #111;
+      padding: 2rem;
+      border-radius: 12px;
+      max-width: 600px;
+      margin: 2rem auto;
+      box-shadow: 0 0 15px #FFD700;
+    }
+    .rewards ul {
+      list-style: none;
+      padding: 0;
+      font-size: 1.1rem;
+      color: #f0f0f0;
+      text-align: left;
+    }
+    .rewards li {
+      margin-bottom: 0.8rem;
+    }
+    .qr {
+      margin: 2rem auto;
+      text-align: center;
+    }
+    .qr img {
+      width: 160px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px #FFD700;
+    }
+    footer {
+      background: #111;
+      padding: 2rem;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+    footer a {
+      color: #FFD700;
+      text-decoration: none;
+      margin: 0 0.5rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo"><img src="favicon.ico" alt="Lord Belgrave Logo" /></div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="presale.html">Presale</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <img src="Naamloos.png" alt="Spinning BELGRAVE Coin" class="spin" />
+    <h1 style="color: #FFD700;">Presale Begins</h1>
+    <div class="countdown" id="countdown">Presale ends in: loading…</div>
+    <p>Secure your place in the empire. Claim your allocation and become a founding noble.</p>
+    <a href="https://dslink.me/BelgraveLord" class="glow-btn" target="_blank">Claim Trustline</a>
+    <a href="https://zealy.io/cw/lordbelgrave/questboard/154ae927-20ff-438a-8fc9-7166ec46c751" class="glow-btn" target="_blank">Whitelist Now</a>
+  </section>
+
+  <section class="qr">
+    <h2>Scan to Join</h2>
+    <img src="IMG_8793.png" alt="Whitelist QR Badge" />
+    <p>Scan with your phone or share this badge to earn noble status.</p>
+  </section>
+
+  <section class="section" id="tokenomics">
+    <h2>$BELGRAVE Tokenomics</h2>
+    <p>Built for sustainability, virality, and Council governance. XRPL-native and halal-compliant.</p>
+    <img src="IMG_8790.png" alt="Tokenomics Infographic" style="max-width: 100%; border-radius: 12px; box-shadow: 0 0 20px #FFD700;" />
+  </section>
+
+  <section class="section">
+    <h2>Rewards Include</h2>
+    <div class="rewards">
+      <ul>
+        <li><strong>• Entry price:</strong> $0.004 per BELGRAVE</li>
+        <li><strong>• Guaranteed allocation:</strong> Up to $500 for WL winners (minimum $100)</li>
+        <li><strong>• Exclusive status:</strong> Your name etched as a founding noble of Belgrave</li>
+        <li><strong>• Vesting:</strong> 20% at TGE, 80% released linearly over 3 months</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Lord Belgrave. All rights reserved.  
+    <br />
+    <a href="https://x.com/belgravelord/status/1984602479066071299?s=46&t=4dzIH7fa3itz30YHUPuQLw">Twitter</a>
+    <a href="https://t.me/belgravelord">Telegram</a>
+  </footer>
+
+  <script>
+    window.addEventListener("DOMContentLoaded", () => {
+      const countdown = document.getElementById("countdown");
+      const endDate = new Date("2025-12-01T00:00:00Z").getTime();
+
+      function updateCountdown() {
+        const now = new Date().getTime();
+        const distance = endDate - now;
+
+        if (distance < 0) {
+          countdown.textContent = "Presale has ended.";
+          return;
+        }
+
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((distance % (
