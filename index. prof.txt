@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lord Belgrave — Claim Your Nobility</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Arial", sans-serif;
+    }
+    @keyframes float {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-15px); }
+    }
+    .float-animation {
+      animation: float 4s ease-in-out infinite;
+    }
+    .gradient-text {
+      background: linear-gradient(135deg, #facc15, #f472b6);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .crypto-card {
+      backdrop-filter: blur(10px);
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #facc15;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body class="bg-gray-900 text-white">
+
+  <!-- Navigation -->
+  <nav class="fixed top-0 w-full z-50 bg-gray-900/95 backdrop-blur-lg border-b border-gray-800">
+    <div class="container mx-auto px-4 py-4 flex items-center justify-between">
+      <div class="flex items-center space-x-3">
+        <img src="IMG_8788.png" alt="Belgrave Logo" class="w-10 h-10 rounded-lg"/>
+        <span class="text-2xl font-bold gradient-text">Lord Belgrave</span>
+      </div>
+      <div class="hidden md:flex items-center space-x-6">
+        <a href="#tokenomics" class="hover:text-yellow-400 transition">Tokenomics</a>
+        <a href="https://bush-munchkin-701.notion.site/..." class="hover:text-yellow-400 transition">Bridge</a>
+        <a href="https://dandy-bathroom-e3e.notion.site/..." class="hover:text-yellow-400 transition">Council</a>
+        <a href="https://t.me/belgravelord" class="hover:text-yellow-400 transition">Telegram</a>
+        <a href="https://dslink.me/BelgraveLord" class="bg-yellow-500 hover:bg-yellow-600 px-4 py-2 rounded-lg text-black font-semibold transition">Set Trustline</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="pt-28 pb-16 px-4 bg-gradient-to-b from-gray-900 to-gray-800">
+    <div class="container mx-auto grid md:grid-cols-2 gap-10 items-center">
+      <div>
+        <h1 class="text-5xl font-bold mb-4">Enter the <span class="gradient-text">Council</span></h1>
+        <p class="text-xl text-gray-400 mb-6">Claim your noble status in crypto. $BELGRAVE is your gateway to prestige, rewards, and legacy.</p>
+        <div class="flex flex-wrap gap-4">
+          <a href="https://dandy-bathroom-e3e.notion.site/..." class="bg-yellow-500 hover:bg-yellow-600 px-6 py-3 rounded-lg text-black font-semibold transition">Join the Trials</a>
+          <a href="https://xmagnetic.org/tokens/BELGRAVE+rMU2jwW88fdwSvRQmPr6CWJtg3xW31SuEG?network=mainnet" class="border border-yellow-500 hover:border-yellow-400 px-6 py-3 rounded-lg transition">Trade $BELGRAVE</a>
+        </div>
+      </div>
+      <div class="float-animation">
+        <img src="IMG_8793.png" alt="Belgrave Coin" class="w-64 mx-auto rounded-full shadow-lg"/>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tokenomics -->
+  <section id="tokenomics" class="py-16 px-4 bg-gray-900 border-t border-gray-800">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-4">Tokenomics</h2>
+      <p class="text-gray-400 mb-6">Discover the dynamics of $BELGRAVE’s distribution and flow of tokens.</p>
+      <img src="IMG_8790.png" alt="Tokenomics Chart" class="mx-auto rounded-xl shadow-lg mb-6 w-full max-w-3xl"/>
+      <a href="https://bush-munchkin-701.notion.site/..." class="bg-yellow-500 hover:bg-yellow-600 px-6 py-3 rounded-lg text-black font-semibold transition">View Full Breakdown</a>
+    </div>
+  </section>
+
+  <!-- NFT Gallery -->
+  <section class="py-16 px-4 bg-gray-800 border-t border-gray-700">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-4">Council NFT Collection</h2>
+      <p class="text-gray-400 mb-6">Each NFT represents a unique noble identity within the Belgrave ecosystem.</p>
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
+        <img src="F0EE6684-5D59-4AA7-B471-BC47536C270F.png" class="rounded-xl shadow-lg">
+        <img src="45F53986-9BC6-4904-AE76-610951E48E02.png" class="rounded-xl shadow-lg">
+        <img src="47ECC478-13A8-4226-AA13-7C0627083B64.png" class="rounded-xl shadow-lg">
+        <img src="5B7C873E-63C3-418F-9C6B-1AB3981F5506.png" class="rounded-xl shadow-lg">
+        <img src="C094E8E3-0554-4F8E-81DE-9B5C8AD29076.png" class="rounded-xl shadow-lg">
+      </div>
+      <a href="https://zealy.io/cw/lordbelgrave/..." class="mt-8 inline-block bg-yellow-500 hover:bg-yellow-600 px-6 py-3 rounded-lg text-black font-semibold transition">Claim Your Noble Role</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 border-t border-gray-800 py-12 px-4 mt-12">
+    <div class="container mx-auto grid md:grid-cols-4 gap-8 text-sm text-gray-400">
+      <div>
+        <img src="IMG_8788.png" alt="Belgrave Logo" class="w-10 h-10 mb-3"/>
+        <p>Your gateway to crypto nobility. $BELGRAVE is more than a token — it’s a title.</p>
+      </div>
+      <div>
+        <h4 class="font-semibold text-white mb-3">Explore</h4>
+        <ul class="space-y-2">
+          <li><a href="#tokenomics" class="hover:text-yellow-400">Tokenomics</a></li>
+          <li><a href="https://dandy-bathroom-e3e.notion.site/..." class="hover:text-yellow-400">Council Trials</a></li>
+          <li><a href="https://bush-munchkin-701.notion.site/..." class="hover:text-yellow-400">Bridge Transparency</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-semibold text-white mb-3">Community</h4>
+        <ul class="space-y-2">
+          <li><a href="https://t.me/belgravelord" class="hover:text-yellow-400">Telegram</a></li>
+          <li><a href="https://zealy.io/cw/lordbelgrave/..." class="hover:text-yellow-400">Zealy Quests</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-semibold text-white mb-3">Access</h4>
+        <ul class="space-y-2">
+          <li><a href="https://dslink.me/BelgraveLord" class="hover:text-yellow-400">Set Trustline</a></li>
+          <li><a href="https://xmagnetic.org/tokens/BELGRAVE+rMU2jwW88fdwSvRQmPr6CWJtg3xW31SuEG?network=mainnet" class="hover:text-yellow-400">Trade $BELGRAVE</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    feather.replace();
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
