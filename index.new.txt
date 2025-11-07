@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lord Belgrave — XRPL Nexus</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"></script>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Cinzel', serif;
+      background: #010101;
+      color: #f0f0f0;
+      overflow-x: hidden;
+    }
+    .gold-glow {
+      text-shadow: 0 0 10px #FFD700, 0 0 20px #FFD700;
+    }
+    .particle {
+      position: absolute;
+      border-radius: 50%;
+      background: radial-gradient(circle, #FFD700 0%, #000 100%);
+      pointer-events: none;
+    }
+    .flash {
+      animation: flashFade 0.5s ease-out forwards;
+    }
+    @keyframes flashFade {
+      0% { opacity: 1; }
+      100% { opacity: 0; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Logo -->
+<div class="text-center pt-8">
+  <img src="IMG_8788.png" alt="Lord Belgrave Logo" style="height: 100px; filter: drop-shadow(0 0 5px gold);" />
+</div>
+
+<!-- Main Content -->
+<div class="relative z-10 min-h-screen flex flex-col items-center justify-center px-4">
+  <!-- Hero Section -->
+  <div class="text-center mb-16">
+    <h1 class="text-5xl md:text-7xl font-bold mb-6 font-cinzel gold-glow">
+      <span style="background: linear-gradient(to right, #FFD700, #DAA520); -webkit-background-clip: text; color: transparent;">XRPL</span>
+      <span style="color: #3a86ff;">NEXUS</span>
+    </h1>
+    <p class="text-xl md:text-2xl max-w-2xl mx-auto mb-8" style="color: #a0c4ff;">
+      The blockchain connection revolution
+    </p>
+    <button id="triggerAnimation" style="background: linear-gradient(to right, #DAA520, #8B8000); color: white; font-weight: bold; padding: 1rem 2rem; border-radius: 9999px; font-size: 1.125rem; transition: all 0.3s ease; box-shadow: 0 0 20px rgba(218,165,32,0.5);">
+      <i data-feather="zap" class="inline mr-2"></i> Ignite Network
+    </button>
+  </div>
+
+  <!-- Token Visualization -->
+  <div id="tokenViz" style="position: relative; width: 100%; max-width: 960px; height: 256px; border-radius: 1rem; overflow: hidden; margin-bottom: 4rem; border: 1px solid rgba(218,165,32,0.3);">
+    <div style="position: absolute; inset: 0; background: linear-gradient(to bottom right, rgba(58,134,255,0.2), rgba(0,0,0,0.8));"></div>
+    <div id="connectionLines" style="position: absolute; inset: 0;"></div>
+    <div id="particles" style="position: absolute; inset: 0;"></div>
+    <div style="position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;">
+      <div style="text-align: center; padding: 2rem;">
+        <div id="belgraveToken" style="font-size: 2.5rem; font-weight: bold; margin-bottom: 1rem; opacity: 0;">
+          <span style="background: linear-gradient(to right, #FFD700, #DAA520); -webkit-background-clip: text; color: transparent;">$BELGRAVE</span>
+        </div>
+        <p id="communityText" style="font-size: 1.25rem; opacity: 0; font-family: 'Cinzel', serif; color: #f1c40f;">
+          "The community grows stronger each day."
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Stats Section -->
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; margin-bottom: 4rem; width: 100%; max-width: 1200px;">
+    <div style="background: linear-gradient(to bottom, rgba(58,134,255,0.3), rgba(10,10,50,0.8)); padding: 1.5rem; border-radius: 1rem; border: 1px solid rgba(58,134,255,0.5); text-align: center;">
+      <div id="networkCounter" style="font-size: 2.5rem; font-weight: bold; color: #FFD700; margin-bottom: 0.5rem;">0</div>
+      <div style="color: #a0c4ff;">Network Nodes</div>
+    </div>
+    <div style="background: linear-gradient(to bottom, rgba(58,134,255,0.3), rgba(10,10,50,0.8)); padding: 1.5rem; border-radius: 1rem; border: 1px solid rgba(58,134,255,0.5); text-align: center;">
+      <div id="tokenCounter" style="font-size: 2.5rem; font-weight: bold; color: #FFD700; margin-bottom: 0.5rem;">0</div>
+      <div style="color: #a0c4ff;">Token Transactions</div>
+    </div>
+    <div style="background: linear-gradient(to bottom, rgba(58,134,255,0.3), rgba(10,10,50,0.8)); padding: 1.5rem; border-radius: 1rem; border: 1px solid rgba(58,134,255,0.5); text-align: center;">
+      <div id="communityCounter" style="font-size: 2.5rem; font-weight: bold; color: #FFD700; margin-bottom: 0.5rem;">0</div>
+      <div style="color: #a0c4ff;">Community Members</div>
+    </div>
+  </div>
+
+  <!-- QR Badge -->
+  <div class="text-center mb-16">
+    <h2 style="font-size: 2rem; color: #00ffff; margin-bottom: 1rem;">Scan to Join</h2>
+    <img src="IMG_8793.png" alt="Whitelist QR Badge" style="width: 160px; border-radius: 12px; box-shadow: 0 0 10px #00ffff;" />
+    <p style="margin-top: 1rem;">Scan with your phone or share this badge to earn noble status.</p>
+  </div>
+
+  <!-- Tokenomics -->
+  <div class="text-center mb-16">
+    <h2 style="font-size: 2rem; color: #00ffff; margin-bottom: 1rem;">$BELGRAVE Tokenomics</h2>
+    <p style="max-width: 600px; margin: 0 auto 2rem;">Built for sustainability, virality, and Council governance. XRPL-native and halal-compliant.</p>
+    <img src="IMG_8790.png" alt="Tokenomics Infographic" style="max-width: 100%; border-radius: 12px; box-shadow: 0 0 20px #00ffff;" />
+  </div>
+</div>
+
+<!-- Flashing elements -->
+<div id="flashElements" class="fixed inset-0 pointer-events-none"></div>
+
+<!-- Audio -->
+<audio id="bgMusic" loop>
+  <source src="https://assets.mixkit.co/music/preview/mixkit-tech-house-vibes-130.mp3" type="audio/mpeg">
+</audio>
+
+<!-- Script -->
+<script>
+  feather.replace();
+  VANTA.GLOBE({
+    el: document.body,
+    mouseControls: true,
+    touchControls: true,
